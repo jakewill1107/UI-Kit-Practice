@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <title>Movie Information Application</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="uk-heading-divider uk-text-center">
+        <span>Movie Information Application</span>
+      </h1>
+    </header>
+
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <div class="uk-navbar-item">
+          <form class="uk-search uk-search-navbar">
+            <span uk-search-icon></span>
+            <input class="uk-search-input" type="search" placeholder="Search" />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="uk-grid-large uk-child-width-1-2@s uk-flex-center uk-text-center"
+      uk-grid
+    >
+      <div>
+        <div class="uk-card uk-card-default uk-card-body uk-card-large">
+          <h2 class="uk-card-title">Wikipedia Articles</h2>
+          <p>
+            This is where the wikipedia results from the search bar input will
+            be listed as article snippets.
+          </p>
+        </div>
+      </div>
+      <div class="uk-flex-last">
+        <div class="uk-card uk-card-default uk-card-body uk-card-large">
+          <h2 class="uk-card-title">Secondary API Articles</h2>
+          <p>
+            This is where the 2nd API results from the search bar input will be
+            listed. TBD
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
